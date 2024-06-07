@@ -1,9 +1,9 @@
  
 ### Che mi dia tutte le pizze
-GET http://localhost:8080/api/pizza
+GET https://pizza-api-htu2.onrender.com/api/pizza
 
 ### CREA UNA PIZZA NUOVA
-POST http://localhost:8080/api/pizza/
+POST https://pizza-api-htu2.onrender.com/api/pizza
 Content-Type: application/json
 
 {
