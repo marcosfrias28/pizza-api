@@ -1,5 +1,5 @@
 import express, { json } from 'express';
-import pizza from '../api/pizza.json' with { type: "json" } ;
+import pizza from './pizza.json' with { type: "json" } ;
 import cors from 'cors';
 import crypto from 'crypto';
 import { validatePizza } from './schema/pizzaSchema.js';
