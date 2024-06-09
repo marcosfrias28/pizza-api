@@ -14,22 +14,22 @@ Content-Type: application/json
 }
 
 
-### CREA UNA PIZZA NUOVA
+### CREA UNA PIZZA NUOVA 
 POST http://localhost:8080/api/pizza/
 Content-Type: application/json
 
 {
-    "name": "Ortolana",
+    "name": "Gamberi e Rucola",
     "price": 8,
-    "cover": "/ortolana.webp",
-    "ingredients": ["Pomodoro", "Mozzarella", "Melanzane", "Peperoni", "Zucchine"]
+    "cover": "/gamberierucola.webp",
+    "ingredients": ["Pomodoro", "Mozzarella", "Gamberi", "Rucola"]
 }
 
 ### Che mi dia la pizza con id 2
 GET http://localhost:8080/api/pizza/
 
 ### Che mi dia la pizza con id 2
-GET http://localhost:8080/api/pizza/07b1a8de-bc1c-4f8d-b0e3-1e8c66c03bfc
+GET http://localhost:8080/api/pizza/9e18050c-2658-11ef-9c4e-c1b133e9f926
 
 ### Che mi dia tutte le pizze con il nome "Margherita"
 GET http://localhost:8080/api/pizza?name=Dia

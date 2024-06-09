@@ -1,4 +1,4 @@
-import { readJSON } from "../utils/readJSON.js";
+import { readJSON } from "../../utils/readJSON.js";
 
 const pizza = readJSON('../pizza.json');
 

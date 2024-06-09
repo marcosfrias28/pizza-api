@@ -1,4 +1,6 @@
-import { PizzaModel } from "../models/pizza.js";
+// import { PizzaModel } from "../models/local/pizza.js";
+import { PizzaModel } from "../models/mysql/pizza.js";
+import { validatePizza } from "../schema/pizzaSchema.js";
 
 export class PizzaController {
     static async getAll(req, res) {
