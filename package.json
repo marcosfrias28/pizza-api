@@ -2,7 +2,7 @@
 	"type": "module",
 	"scripts": {
 		"start:local": "node server-with-local.js",
-		"start": "node server-with-mysql.js",
+		"start": "node --omit=dev server-with-mysql.js",
 		"dev": "node --watch server-with-mysql.js"
 	},
 	"dependencies": {
