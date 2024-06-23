@@ -13,9 +13,22 @@ Content-Type: application/json
     "ingredients": ["Pomodoro", "Mozzarella", "Melanzane", "Peperoni", "Zucchine"]
 }
 
+### Select User by mail and password
+GET http://localhost:8080/user?email=1&password=1
+
+### create User
+POST http://localhost:8080/user/
+Content-Type: application/json
+
+{
+    "name": "Menor113",
+    "email": "klk113@gmail.com",
+    "password": "80956010322"
+}
+
 
 ### CREA UNA PIZZA NUOVA 
-POST http://localhost:8080/api/pizza/
+POST http://localhost:8080/pizza/
 Content-Type: application/json
 
 {
@@ -25,14 +38,18 @@ Content-Type: application/json
     "ingredients": ["Pomodoro", "Mozzarella", "Gamberi", "Rucola"]
 }
 
-### Che mi dia la pizza con id 2
-GET http://localhost:8080/api/pizza/
+### all pizzas
+GET http://localhost:8080/pizza/
 
-### Che mi dia la pizza con id 2
-GET http://localhost:8080/api/pizza/9e18050c-2658-11ef-9c4e-c1b133e9f926
+### all pizza's name
+GET http://localhost:8080/pizza/names/
 
-### Che mi dia tutte le pizze con il nome "Margherita"
-GET http://localhost:8080/api/pizza?name=Dia
+### ID
+GET http://localhost:8080/pizza/9e18050c-2658-11ef-9c4e-c1b133e9f926
 
-### Che mi dia tutte le pizze con l'ingrediente "Mozzarella"
-GET http://localhost:8080/api/pizza?ingredients=Pe
+### Name
+GET http://localhost:8080/pizza?name=nAP
+
+
+### Ingredients
+GET http://localhost:8080/pizza?ingredients=Pe

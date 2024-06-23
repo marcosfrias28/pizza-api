@@ -1,10 +1,16 @@
 import { Router } from "express";
 import { PizzaController } from "../controllers/pizza.js";
 
-export const pizzaRoute = Router();
+export const createPizzaRouter = ({pizzaModel}) => {
+    const pizzaRoute = Router();
 
-pizzaRoute.get('/', PizzaController.getAll)
+    const pizzaController = new PizzaController({pizzaModel});
+    pizzaRoute.get('/', pizzaController.getAll)
+    pizzaRoute.get('/names/', pizzaController.getAllNames)
+    pizzaRoute.get('/:id', pizzaController.getById)
+    pizzaRoute.post('/', pizzaController.create)
 
-pizzaRoute.get('/:id', PizzaController.getById)
+    return pizzaRoute;
+}
 
-pizzaRoute.post('/', PizzaController.create)
+

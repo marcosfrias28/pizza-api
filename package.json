@@ -1,12 +1,20 @@
 {
 	"type": "module",
 	"scripts": {
-		"start": "node --watch ./app.js"
+		"start:local": "node --watch server-with-local.js",
+		"start:mysql": "node --watch server-with-mysql.js"
 	},
 	"dependencies": {
+		"@types/bcrypt": "^5.0.2",
+		"bcrypt": "^5.1.1",
 		"cors": "2.8.5",
+		"dotenv": "^16.4.5",
 		"express": "4.19.2",
-		"mysql2": "^3.10.0",
+		"mysql2": "^3.10.1",
 		"zod": "3.23.8"
+	},
+	"devDependencies": {
+		"@types/cors": "^2.8.17",
+		"@types/express": "^4.17.21"
 	}
 }
